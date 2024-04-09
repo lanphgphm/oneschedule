@@ -40,3 +40,15 @@
     max-width: 350px;
     margin: auto
 }
+
+// supposedly this is to make input form fields centered, then to make the label for each field left aligned
+// but its not working so its not being used in anything yet :) 
+.input-group {
+    width: 500px; 
+    margin: auto; 
+}
+
+.input-group .form-label{
+    display: flex; 
+    text-align: left;
+}

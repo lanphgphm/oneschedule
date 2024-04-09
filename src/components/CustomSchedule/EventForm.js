@@ -102,13 +102,11 @@ function EventForm() {
                 Event has been added to your schedule!
             </div>
             }
-            
             <hr /> 
-            <div className="d-flex flex-column align-items-center">
-                
-            </div>
+            
             <form onSubmit={submitEvent}>
-                <label htmlFor="eventName"> Event name </label> <br />
+                
+                <label htmlFor="eventName" className='form-label'> Event name </label> <br />
                 <input 
                     className='input' 
                     type="text" 
@@ -124,7 +122,7 @@ function EventForm() {
                 {/* <label htmlFor="daysOccuring"> Days Occurring </label> <br />
                 <input className='input' type="text" name="daysOccuring" value={event.daysOccuring} placeholder="Monday, Friday" onChange={recordEventDetails} required /> <br /> */}
 
-                <label htmlFor="daysOccuring"> Days Occurring </label> <br />
+                <label htmlFor="daysOccuring" className='form-label'> Days Occurring </label> <br />
                 <div className='multi-input'>
                     <Select
                         isMulti
@@ -140,7 +138,7 @@ function EventForm() {
                     />
                 </div>
 
-                <label htmlFor="description">Description</label> <br /> 
+                <label htmlFor="description" className='form-label'>Description</label> <br /> 
                 <input 
                     className='input' 
                     type="text" 
@@ -153,8 +151,8 @@ function EventForm() {
                 /> <br />
                 
                 <div className='time-picker-row'>
-                    <label htmlFor="startTime"> Start Time </label> 
-                    <label htmlFor="endTime" > End Time </label> 
+                    <label htmlFor="startTime" className='form-label'> Start Time </label> 
+                    <label htmlFor="endTime" className='form-label'> End Time </label> 
                 </div>
                 <div className='time-picker-row'>
                     <input 
